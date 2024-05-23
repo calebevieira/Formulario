@@ -9,7 +9,10 @@
 body {
   margin: 25% auto ; /* Posicionamento na tela do form */
   margin-right: 50px;
-  background-image: url("");
+  background: linear-gradient(to bottom, #ffffff 10%, #09ADB6 90%);
+  background-size: 100% 200%;
+  padding-top: 25rem;
+  
   
 }
 
@@ -23,16 +26,16 @@ body {
   width: 100%;
   color: #292929;
   font-size: 40px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 6px;
-  height: 40px; /* A altura pode ser muito grande para dispositivos móveis. Vamos reduzir para 30px. */
+  height: 80px; /* A altura pode ser muito grande para dispositivos móveis. Vamos reduzir para 30px. */
   margin-bottom: 60px;
   text-indent: 0px;
 }
 
 .form-contact-textarea {
-  height: 150px; /* Vamos reduzir a altura da área de texto para 150px. */
+  height: 160px; /* Vamos reduzir a altura da área de texto para 150px. */
 }
 
 .form-contact-button {
@@ -44,7 +47,7 @@ body {
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
-  background: #B22222;
+  background: #2D2B6A;
   border: none;
   transition: opacity 1s;
   margin-left: 35%;
@@ -56,11 +59,12 @@ body {
 
 .logo {
   position: absolute;
-  top: -10px; /* Isso pode causar um posicionamento estranho em dispositivos móveis. Verifique se é realmente necessário. */
-  left: 130px;
-  width: 600%;
-  max-width: 600px;
+  top:  -5rem; /* Isso pode causar um posicionamento estranho em dispositivos móveis. Verifique se é realmente necessário. */
+  left: 2rem;
+  width: 800px;
+  max-width: 800px;
   height: auto;
+  
 }
 
 .form-contact {
@@ -91,22 +95,24 @@ body {
 .individual,
 .familiar
 {
-  margin-bottom: 55px; 
+  margin-bottom: 100px; 
   padding: 15px;
+  
 }
 
 .label{
-  font-size: 35px;
+  font-size: 60px;
   font-weight: bold;
   color: rgb(41, 41, 41);
-  margin-right: 50px;
+  
+
 }
 
 .individual,
 .familiar {
-  transform: scale(2.5); /* Aumenta a escala do checkbox em 1.5 vezes */
-  margin-right: 25px; /* Adiciona um pequeno espaçamento entre o checkbox e o rótulo */
-  margin-left: 150px;
+  transform: scale(2.5);
+  margin-right: 25px; 
+  margin-left: 90px;
 
 }
 .whattsapp {
