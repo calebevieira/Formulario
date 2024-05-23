@@ -8,6 +8,8 @@
 
 body {
   margin: 25% auto ; /* Posicionamento na tela do form */
+  margin-right: 50px;
+  background-image: url("");
   
 }
 
@@ -20,13 +22,13 @@ body {
 .form-contact-textarea {
   width: 100%;
   color: #292929;
-  font-size: 18px;
+  font-size: 40px;
   background-color: #E9E9E9;
   border: 1px solid #E9E9E9;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 40px; /* A altura pode ser muito grande para dispositivos móveis. Vamos reduzir para 30px. */
   margin-bottom: 60px;
-  text-indent: 20px;
+  text-indent: 0px;
 }
 
 .form-contact-textarea {
@@ -34,17 +36,18 @@ body {
 }
 
 .form-contact-button {
-  width: 100%;
-  font-size: 18px;
-  border-radius: 4px;
+  width: 40%;
+  font-size: 40px;
+  border-radius: 6px;
   color: #fff;
-  height: 60px;
+  height: 70px;
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
   background: #B22222;
   border: none;
-  transition: opacity 1s; 
+  transition: opacity 1s;
+  margin-left: 35%;
 }
 
 .form-contact-button:hover {
@@ -53,15 +56,15 @@ body {
 
 .logo {
   position: absolute;
-  top: -280px; /* Isso pode causar um posicionamento estranho em dispositivos móveis. Verifique se é realmente necessário. */
-  left: 150px;
-  width: 500%;
-  max-width: 500px;
+  top: -10px; /* Isso pode causar um posicionamento estranho em dispositivos móveis. Verifique se é realmente necessário. */
+  left: 130px;
+  width: 600%;
+  max-width: 600px;
   height: auto;
 }
 
 .form-contact {
-  margin-top: 120px; /* Isso pode não ser necessário, dependendo do layout final. */
+  margin-top: 1px; /* Isso pode não ser necessário, dependendo do layout final. */
 }
 
 @media screen and (max-width: 600px) {
@@ -103,12 +106,13 @@ body {
 .familiar {
   transform: scale(2.5); /* Aumenta a escala do checkbox em 1.5 vezes */
   margin-right: 25px; /* Adiciona um pequeno espaçamento entre o checkbox e o rótulo */
+  margin-left: 150px;
 
 }
 .whattsapp {
   position: fixed;
   bottom: 40px; 
   right: 50px; 
-  width: 70px; 
+  width: 150px; 
   height: auto;
 }
