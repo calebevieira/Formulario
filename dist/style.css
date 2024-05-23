@@ -1,9 +1,13 @@
 .container {
-  width: 50%;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
+  padding-top: 150px;
 }
+
 body {
-  margin: 25% auto;
+  margin: 25% auto ; /* Posicionamento na tela do form */
   
 }
 
@@ -12,40 +16,21 @@ body {
   font-family: "Arial", Times, serif;
 }
 
-.form-contact-input {
-  width: 100%;
-  color: #292929;
-  font-size: 18px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-}
-
+.form-contact-input,
 .form-contact-textarea {
   width: 100%;
   color: #292929;
   font-size: 18px;
   background-color: #E9E9E9;
   border: 1px solid #E9E9E9;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  height: 200px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  height: 40px; /* A altura pode ser muito grande para dispositivos móveis. Vamos reduzir para 30px. */
+  margin-bottom: 60px;
   text-indent: 20px;
-  padding-top: 16px;
-  padding-left: 0;
-  padding-right: 0;
-  font-family: "Arial", Times, serif;
+}
+
+.form-contact-textarea {
+  height: 150px; /* Vamos reduzir a altura da área de texto para 150px. */
 }
 
 .form-contact-button {
@@ -53,35 +38,77 @@ body {
   font-size: 18px;
   border-radius: 4px;
   color: #fff;
-  height: 40px;
+  height: 60px;
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
   background: #B22222;
-  display: block;
   border: none;
-  border-bottom: 1px solid #500707;
-  border-right: 1px solid #500707;
-  transition: 1s;
+  transition: opacity 1s; 
 }
 
 .form-contact-button:hover {
   opacity: 1;
 }
-.form-contact-input,
-.form-contact-textarea,
-.form-contact-select {
-  margin-bottom: 20px;
+
+.logo {
+  position: absolute;
+  top: -280px; /* Isso pode causar um posicionamento estranho em dispositivos móveis. Verifique se é realmente necessário. */
+  left: 150px;
+  width: 500%;
+  max-width: 500px;
+  height: auto;
 }
 
-.form-contact-button,
-.form-contact-checkbox {
-  margin-top: 20px;
+.form-contact {
+  margin-top: 120px; /* Isso pode não ser necessário, dependendo do layout final. */
 }
 
-
-@media screen and (max-width: 600px){
-  body {
-    margin-top: 60%;
+@media screen and (max-width: 600px) {
+  .form-contact-input,
+  .form-contact-textarea {
+    font-size: 16px; /* Reduziremos a fonte para 16px em dispositivos móveis. */
+    height: 30px; /* Reduziremos a altura para 30px em dispositivos móveis. */
+    text-indent: 10px; /* Reduziremos o recuo do texto para 10px em dispositivos móveis. */
   }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100%;
+        
+    }
+  }
+  
+
+  .form-contact-textarea {
+    height: 100px; /* Reduziremos a altura da área de texto para 100px em dispositivos móveis. */
+  }
+}
+
+.form-contact-input,
+.individual,
+.familiar
+{
+  margin-bottom: 55px; 
+  padding: 15px;
+}
+
+.label{
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  margin-right: 50px;
+}
+
+.individual,
+.familiar {
+  transform: scale(2.5); /* Aumenta a escala do checkbox em 1.5 vezes */
+  margin-right: 25px; /* Adiciona um pequeno espaçamento entre o checkbox e o rótulo */
+
+}
+.whattsapp {
+  position: fixed;
+  bottom: 40px; 
+  right: 50px; 
+  width: 70px; 
+  height: auto;
 }
