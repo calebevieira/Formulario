@@ -104,15 +104,16 @@ body {
   font-size: 60px;
   font-weight: bold;
   color: rgb(41, 41, 41);
+  align-items: center;
   
-
 }
 
 .individual,
 .familiar {
-  transform: scale(2.5);
+  transform: scale(3.5);
   margin-right: 25px; 
-  margin-left: 90px;
+  margin-left: 70px;
+  vertical-align: 11px
 
 }
 .whattsapp {
